@@ -21,7 +21,7 @@ window.addEventListener('load',() => {
                 let weather = data.weather[0].main;
                 let wind = data.wind.speed;
                 console.log(wind);
-               let curlocationName = data.name;
+               let curlocationName = `<i class="fas fa-street-view"></i>${data.name}`;
                let country = data.sys.country;
                let location = `${curlocationName},${country}`;
                curlocation.innerHTML = location;
